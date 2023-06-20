@@ -1,0 +1,34 @@
+.song section:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.song p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: x-large;
+}
+
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1em;
+    background-color: #FF6200;
+
+    transform-origin: 0 50%;
+    animation: 1s linear forwards adjust-progressbar;
+
+    animation-timeline: scroll(block nearest);
+}
+
+@keyframes adjust-progressbar {
+    from {
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}

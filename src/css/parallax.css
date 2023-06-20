@@ -1,0 +1,59 @@
+.hero {
+    margin: 64px 0 42px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__body {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.hero__header {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    width: 100%;
+    text-align: left;
+    animation: 1s linear forwards parallaxInverse;
+
+    animation-timeline: scroll(block root);
+    
+}
+
+.hero__header h1 span {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+.hero__body img {
+    animation: 1s linear forwards parallax;
+
+    animation-timeline: scroll(block root);
+}
+
+.song-paralax {
+    margin-left: 72px;
+}
+
+@keyframes parallax {
+    from {
+        transform: translateY(-5%);
+    }
+
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes parallaxInverse {
+    from {
+        transform: translateY(150px);
+    }
+
+    to {
+        transform: translateY(1000px);
+    }
+}
