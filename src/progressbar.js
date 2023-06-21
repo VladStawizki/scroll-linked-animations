@@ -7,6 +7,20 @@ export class ProgressBar extends LitElement {
         return this
     }
 
+    firstUpdated() {
+        const progressbar = this.querySelector('#progressbar');
+        progressbar.style.transformOrigin = '0% 50%';
+
+        progressbar.animate({
+            transform: ['scaleX(0)', 'scaleX(1)'],
+        }, {
+            fill: 'forwards',
+            timeline: new ScrollTimeline({
+                source: document.documentElement,
+            })
+        })
+    }
+
     render() {
         return html`
         <div id="progressbar"></div>

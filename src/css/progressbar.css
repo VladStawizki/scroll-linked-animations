@@ -16,11 +16,11 @@
     right: 0;
     height: 1em;
     background-color: #FF6200;
-
+/* 
     transform-origin: 0 50%;
     animation: 1s linear forwards adjust-progressbar;
 
-    animation-timeline: scroll(block nearest);
+    animation-timeline: scroll(block nearest); */
 }
 
 @keyframes adjust-progressbar {

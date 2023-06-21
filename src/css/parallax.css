@@ -16,9 +16,10 @@
     left: 64px;
     width: 100%;
     text-align: left;
-    animation: 1s linear forwards parallaxInverse;
+    will-change: transform;
+    /* animation: 1s linear forwards parallaxInverse;
 
-    animation-timeline: scroll(block root);
+    animation-timeline: scroll(block root); */
     
 }
 
@@ -29,9 +30,10 @@
 }
 
 .hero__body img {
-    animation: 1s linear forwards parallax;
+    will-change: transform;
+    /* animation: 1s linear forwards parallax;
 
-    animation-timeline: scroll(block root);
+    animation-timeline: scroll(block root); */
 }
 
 .song-paralax {
