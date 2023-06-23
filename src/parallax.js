@@ -7,29 +7,29 @@ export class Parallax extends LitElement {
         return this
     }
 
-    firstUpdated() {
-        const timeline = new ScrollTimeline({
-            source: document.documentElement,
-        });
+    // firstUpdated() {
+    //     const timeline = new ScrollTimeline({
+    //         source: document.documentElement,
+    //     });
 
-        const firstElement = this.querySelector('.hero__body img');
+    //     const firstElement = this.querySelector('.hero__body img');
 
-        firstElement.animate({
-            transform: ['translateY(-5%)', 'translateY(-200%)'],
-        }, {
-            fill: 'forwards',
-            timeline: timeline
-        })
+    //     firstElement.animate({
+    //         transform: ['translateY(-5%)', 'translateY(-200%)'],
+    //     }, {
+    //         fill: 'forwards',
+    //         timeline: timeline
+    //     })
 
-        const secondElement = this.querySelector('.hero__header');
+    //     const secondElement = this.querySelector('.hero__header');
 
-        secondElement.animate({
-            transform: ['translateY(150px)', 'translateY(1000px)'],
-        }, {
-            fill: 'forwards',
-            timeline: timeline
-        })
-    }
+    //     secondElement.animate({
+    //         transform: ['translateY(150px)', 'translateY(1000px)'],
+    //     }, {
+    //         fill: 'forwards',
+    //         timeline: timeline
+    //     })
+    // }
     
     render() {
         return html`

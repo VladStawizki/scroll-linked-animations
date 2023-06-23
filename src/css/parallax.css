@@ -5,6 +5,7 @@
 }
 
 .hero__body {
+    border-radius: 4px;
     position: relative;
     height: 450px;
     overflow: hidden;
@@ -16,24 +17,23 @@
     left: 64px;
     width: 100%;
     text-align: left;
-    will-change: transform;
-    /* animation: 1s linear forwards parallaxInverse;
+    animation: 1s linear forwards parallaxInverse;
 
-    animation-timeline: scroll(block root); */
-    
+    animation-timeline: scroll(block root);
 }
 
 .hero__header h1 span {
     padding: 8px;
     border-radius: 8px;
-    background-color: antiquewhite;
+    background-color: maroon;
+
 }
 
 .hero__body img {
     will-change: transform;
-    /* animation: 1s linear forwards parallax;
+    animation: 1s linear forwards parallax;
 
-    animation-timeline: scroll(block root); */
+    animation-timeline: scroll(block root);
 }
 
 .song-paralax {
