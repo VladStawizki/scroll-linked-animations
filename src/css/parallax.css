@@ -59,3 +59,11 @@
         transform: translateY(1000px);
     }
 }
+
+@media (prefers-color-scheme: light) {
+    .hero__header h1 span {
+        color: #213547;
+        background-color: antiquewhite;
+    
+    }
+  }
