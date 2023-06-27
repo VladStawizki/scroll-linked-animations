@@ -11,6 +11,7 @@ class App extends LitElement {
   constructor() {
     super()
     this.pathname = location.pathname
+    console.log(location.pathname);
   }
 
   createRenderRoot() {
@@ -18,7 +19,6 @@ class App extends LitElement {
   }
 
   render() {
-    console.log(location.pathname);
     switch (this.pathname) {
       case '/':
         return html`<my-home></my-home>`;
