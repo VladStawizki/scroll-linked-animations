@@ -18,6 +18,7 @@ class App extends LitElement {
   }
 
   render() {
+    console.log(this.pathname);
     switch (this.pathname) {
       case '/':
         return html`<my-home></my-home>`;
